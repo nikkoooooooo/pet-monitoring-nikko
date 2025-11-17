@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import AddTask from "@/components/AddTask";
+import PetCard from "@/components/PetCard";
+import Swiftie from "@/public/IMG_20250430_203619.jpg"
 
 interface Task {
   task_id: number;
@@ -41,10 +43,61 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full bg-blue-300 flex flex-col min-h-screen justify-center items-center p-4">
-      <h1 className="text-2xl font-bold mb-4">Tasks App</h1>
+    <div className="w-full h-auto bg-[url('/9f8db95e36a63537e4e5cefb10b8d941.jpg')] flex flex-col min-h-screen  items-center">
 
-      <AddTask />
+
+      <div className="w-full h-auto flex flex-col sm:flex-row justify-center gap-10 items-center mt-40 py-5">
+        <PetCard 
+          title='Swiftie'
+          bDay="11/22/33"
+          age={3}
+          species="Cat"
+          photo_url={Swiftie}
+
+
+        />
+           <PetCard 
+          title='Swiftie'
+          bDay="11/22/33"
+          age={3}
+          species="Cat"
+          photo_url={Swiftie}
+
+
+        />
+
+           <PetCard 
+          title='Swiftie'
+          bDay="11/22/33"
+          age={3}
+          species="Cat"
+          photo_url={Swiftie}
+
+
+        />
+
+           <PetCard 
+          title='Swiftie'
+          bDay="11/22/33"
+          age={3}
+          species="Cat"
+          photo_url={Swiftie}
+
+
+        />
+
+           <PetCard 
+          title='Swiftie'
+          bDay="11/22/33"
+          age={3}
+          species="Cat"
+          photo_url={Swiftie}
+
+
+        />
+      </div>
+
+      {/* <AddTask />
 
       <ul className="w-full max-w-md">
         {tasks.map((task) => (
@@ -68,7 +121,7 @@ export default function Home() {
             </div>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

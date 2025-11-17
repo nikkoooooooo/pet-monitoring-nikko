@@ -29,8 +29,19 @@ export default function AddTask() {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="New task"
+        className="p-2 border-2 hover:border-black rounded-md placeholder:text-gray-300"
       />
-      <button type="submit">Add Task</button>
+      <button type="submit" className="p-2 bg-amber-300">Add Task</button>
     </form>
   );
 }
+
+
+
+// create pet card
+// learn how to add image
+// learn well about posgre relational DB
+// polish the design
+// TODO AFTER ALL THAT: 
+// AUTHENTICATION
+// learn well about crud and try to start the start up
